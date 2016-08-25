@@ -1,6 +1,12 @@
 # cubemap-stitch
 
-This repository provides a utility to stitch cubemaps into other types of texture maps (equirectangular, dual paraboloid, and octahedral maps), and stitch the other types of maps back into cube maps. The utility allows for flexibility in the image size of the conversion - the user can specify the desired image width, and the height is commputed (cube, paraboloid, and octahedral mappings are square, and spherical maps are generated to be 16:9). Moreover, the utility is sampling-agnostic, so the user can select whether to use uniform or jittered sampling over the pixels, as well as the number of samples to use per pixel. The usage for the tool is as follows:
+This repository provides a utility to stitch cubemaps into other types of texture maps (equirectangular, dual paraboloid, and octahedral maps), and stitch the other types of maps back into cube maps. The utility allows for flexibility in the image size of the conversion - the user can specify the desired image width, and the height is commputed (cube, paraboloid, and octahedral mappings are square, and spherical maps are generated to be 16:9). Moreover, the utility is sampling-agnostic, so the user can select whether to use uniform or jittered sampling over the pixels, as well as the number of samples to use per pixel. 
+
+To compile, simple run:
+
+sh compile.sh
+
+The usage for the tool is as follows:
 
 ./hev-mapConverter [arg1] [arg2] ... [arg12] [arg13]
 
